@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+}
+
+body{
+    background-color: #323136;
+    color: whitesmoke;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    background-color: #323136;
+    padding: 23px;
+    box-shadow: 0 2px 45px #ff8300;
+    position: sticky;
+    top: 0;
+}
+
+.welcome {
+    font-size: 28px;
+    font-weight: bolder;
+    color: #ff8300;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+    padding-right: 53px;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+    cursor: default;
+}
+
+#HOME {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#HOME .intro {
+    display: flex;
+    margin: 40px;
+}
+
+#HOME .description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 23px;
+}
+
+#HOME h1 {
+    font-size: 60px;
+    color: #ff8300;
+    margin: 30px;
+}
+
+#HOME span {
+    color: #ff8300;
+}
+
+.intro img {
+    width: 303px;
+    border-radius: 50%;
+}
+
+.description h2 {
+    font-size: 40px;
+}
+
+.description p {
+    margin: 23px;
+    font-size: 19px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    display: flex;
+}
+
+.last-line{
+    margin-top: 7px;
+    margin-bottom: 2px;
+    padding: 8px;
+    border-top: 2px solid #ff8300;
+}
+
+.card {
+    display: flex;
+    height: 70px;
+    width: 350px;
+}
+
+.card svg {
+    /* position: absolute; */
+    display: flex;
+    width: 60%;
+    height: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: 1;
+    transition: opacity 0.25s;
+    z-index: 2;
+    padding: 0.25rem;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.card .social-link1,
+.card .social-link2,
+.card .social-link3,
+.card .social-link4,
+.card .social-link5 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+    transition: 0.25s;
+    border-radius: 50px;
+}
+
+.card svg {
+    transform: scale(1);
+}
+
+.card .social-link1:hover {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link2:hover {
+    background-color: #242c34;
+    fill: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link3:hover {
+    background-color: #5865f2;
+    fill: #5865f2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link4:hover {
+    background-color: #0a66c2;
+    fill: #0a66c2;
+    animation: bounce_613 0.4s linear;
+}
+
+.card .social-link5:hover {
+    background-color: #242c34;
+    fill: #242c34;
+    animation: bounce_613 0.4s linear;
+}
+
+@keyframes bounce_613 {
+    40% {
+        transform: scale(1.4);
+    }
+
+    60% {
+        transform: scale(0.8);
+    }
+
+    80% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.Education{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.eheading{
+    margin-bottom: 53px;
+    color: #ff8300;
+}
+
+.eheading h2{
+    font-size: 30px;
+}
+
+.e{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 53px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0;
+}
