@@ -44,6 +44,27 @@ nav a {
     cursor: default;
 }
 
+@media (max-width: 600px) {
+    /* Hide all nav links except "Welcome" */
+    .nav-link {
+        display: none;
+    }
+
+    /* Center the "Welcome" text */
+    .welcome {
+        margin: auto;
+        font-size: 1.5em;
+    }
+
+    .nav_list ul{
+        display: none;
+    }
+
+    nav{
+        display: flex;
+    }
+}
+
 #HOME {
     display: flex;
     align-items: center;
@@ -222,8 +243,37 @@ footer{
 }
 
 .divider {
-    width: 100%;
+    width: 80%;
     height: 2px;
     background-color: #ccc;
-    margin: 40px 0;
+    margin: 40px auto;
+}
+
+@media (max-width: 600px) {
+    .divider {
+        width: 60%;
+    }
+}
+
+@media (max-width: 528px) {
+    .description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* @media (max-width: 528px) {
+    .intro img {
+        height: 174px;
+        width: 178px;
+    }
+} */
+
+@media (max-width: 528px) {
+    .intro {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
