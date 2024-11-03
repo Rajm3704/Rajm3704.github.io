@@ -79,6 +79,7 @@ nav a {
 #HOME .description {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding: 23px;
 }
@@ -91,6 +92,7 @@ nav a {
 
 #HOME span {
     color: #ff8300;
+    text-align: center;
 }
 
 .intro img {
@@ -100,11 +102,16 @@ nav a {
 
 .description h2 {
     font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .description p {
     margin: 23px;
     font-size: 19px;
+    text-align: center;
 }
 
 footer{
