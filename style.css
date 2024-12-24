@@ -96,6 +96,7 @@ nav a {
 }
 
 .intro img {
+    height: 282px;
     width: 303px;
     border-radius: 50%;
 }
