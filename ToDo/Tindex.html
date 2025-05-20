@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Tstyle.css">
+    <script src="Tscript.js"></script>
+    <!--NOT RESPONSIVE till 20 May 2025-->
+</head>
+
+<body>
+    <div class="container" style="align-items: center;">
+        <h1>ToDo</h1>
+        <div class="input-group">
+            <input type="text" id="taskInput1" placeholder="Title...">
+            <input type="text" id="taskInput2" placeholder="Add a new task...">
+            <!-- <button onclick="addTask()">Add</button>
+            <button id="dBtn" onclick="deleteTask()" hidden>Delete</button>
+            <button id="cBtn" onclick="clearTask()" hidden>Clear All</button> -->
+            <div class="btn_container">
+                <div class="pane">
+                    <label class="label">
+                        <span>Add</span>
+                        <input onclick="addTask()" id="left" class="input" name="radio" type="radio">
+                    </label>
+                    <label class="label">
+                        <span>Delete</span>
+                        <input onclick="deleteTask()" id="middle" class="input" checked="checked" name="radio"
+                            type="radio">
+                    </label>
+                    <label class="label">
+                        <span>Clear</span>
+                        <input onclick="clearTask()" id="right" class="input" name="radio" type="radio">
+                    </label>
+                    <span class="selection"></span>
+                </div>
+            </div>
+        </div>
+        <div id="show">
+            <h3>Tasks</h3>
+        </div>
+        <div class="todo-list" id="todoList"></div>
+    </div>
+</body>
+
+</html>
