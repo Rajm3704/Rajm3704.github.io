@@ -12,6 +12,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             padding: 2rem;
             color: #ff8300;
         }
@@ -21,10 +22,11 @@
             border-radius: 1rem;
             box-shadow: 0 0px 29px rgb(288 131 0);
             padding: 2rem;
-            width: 100%;
+            width: 28vw;
             max-width: 500px;
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
         h1 {
@@ -94,7 +96,6 @@
 
         .btn_container {
             transform-style: preserve-3d;
-            perspective: 1000px;
             margin: auto;
         }
 
@@ -168,3 +169,25 @@
         .label:nth-child(3):has(input:checked)~.selection {
             transform: translateX(calc(4.5cm * 2/3));
         }
+
+        @media (max-width: 320px) {
+    .input-group input{
+        width: 50vw;
+    }
+    .input-group{
+            display: flex;
+     align-items: center;
+    /* justify-content: center; */
+    margin: 0;
+    }
+    #show{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 225px) {
+    #show{
+        font-size: 10px;
+    }
+}
+

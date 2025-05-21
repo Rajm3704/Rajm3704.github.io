@@ -1,11 +1,11 @@
-// if (localStorage.length === 0) {
-//     dBtn.hidden = true
-//     cBtn.hidden = true
-//     show.innerHTML = '<h3>No Tasks yet!</h3>'
-// }
+if (localStorage.length === 0) {
+    show.innerHTML = '<h3>No Tasks yet!</h3>'
+    // dBtn.hidden = true
+    // cBtn.hidden = true
+}
 // if (localStorage.length != 0) {
-//     dBtn.hidden = false
-//     cBtn.hidden = false
+    // dBtn.hidden = false
+    // cBtn.hidden = false
 // }
 function addTask() {
     if (taskInput1.value == "" || taskInput2.value == "") return 0

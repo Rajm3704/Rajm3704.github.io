@@ -33,9 +33,14 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     list-style: none;
     padding-right: 53px;
     font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: #ff8300;
 }
 
 nav a {
@@ -96,7 +101,7 @@ nav a {
 }
 
 .intro img {
-    height: 264px;
+    height: 280px;
     width: 284px;
     border-radius: 50%;
 }
@@ -285,3 +290,33 @@ footer{
         align-items: center;
     }
 }
+
+li ul.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Position below the parent li */
+    left: 0;
+    /* background-color: #444; */
+    font-size: smaller;
+    margin: 4px;
+    min-width: 160px;
+    z-index: 1000;
+  }
+
+  /* Dropdown items */
+  li ul.dropdown li {
+    display: block;
+  }
+
+  li ul.dropdown li a {
+    padding: 4px 3px;
+  }
+
+  li ul.dropdown li a:hover {
+    color: #ff8300;
+  }
+
+  /* Show dropdown on hover */
+  li:hover > ul.dropdown {
+    display: block;
+  }
