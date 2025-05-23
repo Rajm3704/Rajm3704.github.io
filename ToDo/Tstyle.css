@@ -171,23 +171,30 @@
         }
 
         @media (max-width: 320px) {
-    .input-group input{
-        width: 50vw;
-    }
-    .input-group{
-            display: flex;
-     align-items: center;
-    /* justify-content: center; */
-    margin: 0;
-    }
-    #show{
-        font-size: 12px;
-    }
-}
+            .input-group input {
+                width: 50vw;
+            }
 
-@media (max-width: 225px) {
-    #show{
-        font-size: 10px;
-    }
-}
+            .input-group {
+                display: flex;
+                align-items: center;
+                /* justify-content: center; */
+                margin: 0;
+            }
 
+            #show {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 225px) {
+            #show {
+                font-size: 10px;
+            }
+        }
+
+        @media (max-width: 885px) {
+            .container {
+                width: 100%;
+            }
+        }
