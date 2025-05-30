@@ -38,7 +38,7 @@
         }
 
         .input-group {
-            width: 71vw;
+            /* width: 71vw; */
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -197,5 +197,11 @@
         @media (max-width: 885px) {
             .container {
                 width: 100%;
+            }
+        }
+
+         @media (max-width: 640px) {
+            .input-group {
+                width: 71vw;
             }
         }
