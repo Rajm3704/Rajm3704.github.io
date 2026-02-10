@@ -130,13 +130,13 @@ footer{
 footer{
     display: flex;
 }
-
 .last-line{
     margin-top: 7px;
     margin-bottom: 2px;
     padding: 8px;
     border-top: 2px solid #ff8300;
 }
+
 
 .card {
     display: flex;
