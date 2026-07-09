@@ -215,7 +215,7 @@ h2.section-title {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border: 1px solid var(--border);
     max-width: 800px;
-    margin: 0 auto;
+    margin: 5px auto;
     border-left: 4px solid var(--primary);
     width: 100%;
 }
